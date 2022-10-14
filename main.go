@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"ginblog/model"
 	"ginblog/routes"
 )
@@ -11,5 +10,4 @@ func main() {
 	model.InitDb()
 	//引入路由组件
 	routes.InitRouter()
-	fmt.Println("test")
 }
