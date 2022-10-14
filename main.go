@@ -1,8 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"ginblog/model"
+	"ginblog/routes"
+)
 
 func main() {
-	fmt.Println("hahaha")
-	fmt.Println("第二次提交")
+	//引入数据库
+	model.InitDb()
+	//引入路由组件
+	routes.InitRouter()
 }
